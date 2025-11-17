@@ -1,0 +1,45 @@
+<!-- Question 11: Create a webpage with three different CSS styling methods: inline CSS for one
+element, internal CSS for another section, and external CSS for the rest of the page.
+Document which method you used where in comments. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Methods</title>
+
+    <style>
+        header {
+            background-color: #0077ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 style="color: red; font-size: 30px; text-align: center;">
+        Welcome — This Heading Uses Inline CSS
+    </h1>
+
+    <header>
+        This header uses <strong>Internal CSS</strong>.
+    </header>
+
+    <main id="main">
+        <p>
+            This content is styled using <strong>External CSS</strong> from the styles.css file.
+        </p>
+    </main>
+
+    <footer>
+        © 2025 All Rights Reserved — Styled using external CSS
+    </footer>
+
+</body>
+</html>

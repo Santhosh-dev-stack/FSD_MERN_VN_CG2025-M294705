@@ -1,0 +1,103 @@
+<!-- Question 3: Create a registration form with the following fields: Username, Email, Password, 
+Confirm Password, Date of Birth, Gender (radio buttons), Country (dropdown), Terms & 
+Conditions (checkbox), and a Submit button. Use appropriate input types and include 
+placeholder text. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        padding: 20px;
+      }
+      form {
+        background: #fff;
+        padding: 20px;
+        width: 400px;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .gender-container {
+        margin: 10px 0;
+      }
+      .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      .submit-btn:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">User Registration Form</h2>
+
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm-password" 
+        name="confirm-password"
+        placeholder="Re-enter password"
+        required
+      />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label>Gender:</label>
+      <div class="gender-container">
+        <input type="radio" id="male" name="gender" value="male" /> 
+        <label for="">male</label>
+        <input type="radio" id="female" name="gender" value="female" /> Female
+        <input type="radio" id="other" name="gender" value="other" /> Other
+      </div>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+      </select>
+
+      <input type="checkbox" required />
+      <label for="">I agree to the Terms & Conditions</label>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </body>
+</html>

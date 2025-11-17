@@ -1,0 +1,47 @@
+<!-- Question 16: Create a navigation menu once using display:inline (all links in one row) and
+again using display:block (links stacked vertically), showing the difference clearly. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inline vs Block Nav</title>
+<style>
+    .inline-nav a {
+        display: inline;
+        margin-right: 15px;
+        background: lightblue;
+        padding: 5px 10px;
+    }
+
+    .block-nav a {
+        display: block;
+        width: 150px;
+        background: lightgreen;
+        padding: 8px;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu (display:inline)</h2>
+<nav class="inline-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+
+<hr>
+
+<h2>Navigation Menu (display:block)</h2>
+<nav class="block-nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+
+</body>
+</html>
