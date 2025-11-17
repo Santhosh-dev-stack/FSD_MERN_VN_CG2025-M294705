@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Santhosh A</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <div class="logo">S</div>
+          <div>
+            <div class="site-title">Santhosh A</div>
+            <div class="muted">Contact</div>
+          </div>
+        </div>
+
+        <nav aria-label="Primary Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h2>Contact Me</h2>
+        <p class="lead">Have a project or question? Send a message and I'll get back to you.</p>
+      </section>
+
+      <section class="section contact-grid">
+        <form class="contact-card" action="#" method="post">
+          <label for="fullname">Full Name</label>
+          <input
+            id="fullname"
+            name="fullname"
+            class="input"
+            type="text"
+            placeholder="Your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            class="input"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" class="input" type="tel" placeholder="+1 555 555 5555" />
+
+          <label for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            class="input"
+            type="text"
+            placeholder="What's this about?"
+            required
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button class="submit" type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-card">
+          <h3>Contact Info</h3>
+          <address>
+            Email: <a href="mailto:santhosh.prof268@gmail.com">santhosh.prof268@gmail.com</a><br />
+            Phone: <a href="tel:9944776843">9944776843</a><br />
+            Location: Chennai, India.
+          </address>
+
+          <h4>Follow</h4>
+          <div class="footer-social"><a href="http://www.linkedin.com/in/santhosh-ayyanar-6557b1285">LinkedIn</a> <a href="https://github.com/SandySanthosh268">GitHub</a></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>&copy; <span id="year3"></span> Santhosh A</div>
+        <div class="footer-social"><a href="http://www.linkedin.com/in/santhosh-ayyanar-6557b1285">LinkedIn</a><a href="https://github.com/SandySanthosh268">GitHub</a></div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year3').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

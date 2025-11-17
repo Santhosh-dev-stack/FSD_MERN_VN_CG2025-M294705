@@ -1,0 +1,32 @@
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.navbar a {
+    text-decoration: none;
+
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: #333;        
+    transition: 0.3s ease;
+}
+
+
+.navbar a:visited {
+    color: purple;
+}
+
+
+.navbar a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}

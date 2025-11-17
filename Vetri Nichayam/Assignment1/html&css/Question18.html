@@ -1,0 +1,75 @@
+<!-- Question 18: Design a dashboard layout using CSS Grid with the following sections:
+• Header (spanning full width)
+• Sidebar (left side, 1/4 width)
+• Main content area (center, 2/4 width)
+• Widget panel (right side, 1/4 width)
+• Footer (spanning full width)
+Use grid-template-columns/rows for the layout -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Dashboard</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    header {
+        grid-column: 1 / 4;
+        background: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sidebar {
+        background: #ddd;
+        padding: 20px;
+    }
+
+    .main {
+        background: #f5f5f5;
+        padding: 20px;
+    }
+
+    .widgets {
+        background: #e5e5e5;
+        padding: 20px;
+    }
+
+    footer {
+        grid-column: 1 / 4;
+        background: #444;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+    <header>Dashboard Header</header>
+
+    <div class="sidebar">Sidebar (1/4 width)</div>
+
+    <div class="main">Main Content (2/4 width)</div>
+
+    <div class="widgets">Widget Panel (1/4 width)</div>
+
+    <footer>Footer Section</footer>
+</div>
+
+</body>
+</html>

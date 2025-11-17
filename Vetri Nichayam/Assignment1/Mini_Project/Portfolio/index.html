@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Santhosh A-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <div class="logo">S</div>
+          <div>
+            <div class="site-title">Santhosh A</div>
+            <div class="muted">Software Developer</div>
+          </div>
+        </div>
+
+        <nav aria-label="Primary Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="https://github.com/SandySanthosh268" target="_blank" rel="noopener"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero section">
+        <div class="intro">
+          <h1>Hi — I'm Santhosh</h1>
+          <p>Passionate about crafting modern, user-focused web experiences using
+        cutting-edge technologies and clean design.</p>
+          
+          <a class="cta" href="project.html">View Projects</a>
+        </div>
+
+        <div class="avatar">
+          <img src="./image/profile.jpg" alt="Sandy Pic" />
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m an MCA graduate passionate about crafting creative, efficient, and user-friendly web
+            applications. My focus lies in full-stack development — turning innovative ideas into
+            impactful digital experiences. I’m currently expanding my skills in modern technologies
+            like React.js, Node.js, and Next.js, while continuously improving my
+            problem-solving and design thinking abilities.
+          </p>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Git</span>
+          <span class="skill">Java</span>
+          <span class="skill">Spring Boot</span>
+          <span class="skill">MySQL</span>
+          
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MCA</td>
+                <td>Anna University</td>
+                <td>2025</td>
+                <td>First Class with Distinction</td>
+              </tr>
+              <tr>
+                <td>B.Com C/A</td>
+                <td>Madras University</td>
+                <td>2022</td>
+                <td>First Class with Distinction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div style="height: 12px"></div>
+      <a class="cta" href="contact.html">Get In Touch</a>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>&copy; <span id="year"></span> Santhosh</div>
+        <div class="footer-social">
+          <a href="http://www.linkedin.com/in/santhosh-ayyanar-6557b1285" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/SandySanthosh268" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="example-fixed"><a href="contact.html">Contact</a></div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
