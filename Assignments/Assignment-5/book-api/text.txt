@@ -1,0 +1,20 @@
+book-api/
+│── app.js
+│── package.json
+│── /models
+│     └── book.js
+│── /controllers
+│     └── bookController.js
+│── /routes
+│     └── bookRoutes.js
+
+Output Screenshots/
+  1_post_book1.png
+  2_post_book2.png
+  3_post_book3.png
+  4_get_all.png
+  5_get_by_genre.png
+  6_get_by_id.png
+  7_put_update.png
+  8_delete.png
+
